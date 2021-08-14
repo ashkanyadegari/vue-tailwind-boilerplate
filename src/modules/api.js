@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://api.kanye.rest/',
   //   baseURL: '/' + store.state.api,
   //   headers: {"X-CSRF-TOKEN": store.state.csrf}
 });
