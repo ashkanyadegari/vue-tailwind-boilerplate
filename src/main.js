@@ -1,12 +1,12 @@
 import { createApp } from 'vue';
-import Vue from 'vue/dist/vue.esm';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 import './index.css';
+import API from './modules/api';
 
-import API from './api';
+const app = createApp(App).use(store).use(router);
 
-Vue.prototype.$ax = API;
+app.config.globalProperties.$axios = API;
 
-createApp(App).use(store).use(router).mount('#app');
+app.mount('#app');
