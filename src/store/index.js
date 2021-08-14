@@ -7,7 +7,7 @@ export default createStore({
       production: `${origin}/`,
       staging: `${origin}/`,
     },
-    api: "api/v1/",
+    api: 'api/v1/',
 
   },
   mutations: {
